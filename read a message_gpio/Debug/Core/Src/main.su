@@ -1,0 +1,4 @@
+../Core/Src/main.c:14:6:main	16	static
+../Core/Src/main.c:33:6:SysClkconfig	4	static
+../Core/Src/main.c:37:6:error_handler	4	static
+../Core/Src/main.c:40:6:USART1_Init	8	static

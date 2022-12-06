@@ -1,0 +1,11 @@
+
+
+#include <stdint.h>
+
+//AHBE2ENR 0x 4002 104c
+uint32_t *pC1kReg =(uint32_t *)0x4002104c;
+int main(void)
+{
+    /* Loop forever */
+	for(;;);
+}

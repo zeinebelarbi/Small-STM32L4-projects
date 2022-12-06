@@ -1,0 +1,53 @@
+/*
+ * main.c
+ *
+ *  Created on: Dec 4, 2022
+ *      Author: LENOVO
+ */
+#include "stm32l4xx_hal.h"
+void SysClkconfig();
+UART_HandleTypeDef huart1;
+void error_handler();
+void USART1_Init();
+int  main (void)
+{
+		HAL_Init();
+		SysClkconfig();
+		USART1_Init();
+
+
+
+
+HAL_UART_Transmit(&huart1, pData, Size, Timeout);
+
+while(1)
+{
+
+}
+return (0);
+}
+
+
+void SysClkconfig()
+{
+
+}
+void error_handler(){
+}
+
+void USART1_Init()
+{
+huart1.Instance =USART1;
+huart1.Init.BaudRate =115200;
+huart1.Init.HwFlowCtl =UART_HWCONTROL_NONE  ;
+huart1.Init.Mode=UART_MODE_TX_RX ;
+huart1.Init.Parity= UART_PARITY_NONE ;
+huart1.Init.StopBits=UART_STOPBITS_1  ;
+huart1.Init.WordLength=UART_WORDLENGTH_8B;
+
+if (HAL_UART_Init(&huart1) != HAL_OK )
+{
+	error_handler();
+}
+
+}

@@ -1,0 +1,16 @@
+/*
+ * main.c
+ *
+ *  Created on: Dec 4, 2022
+ *      Author: LENOVO
+ */
+void SysClkconfig();
+int  main (void)
+{
+		HAL_Init();
+		SysClkconfig();
+}
+void SysClkconfig()
+{
+
+}

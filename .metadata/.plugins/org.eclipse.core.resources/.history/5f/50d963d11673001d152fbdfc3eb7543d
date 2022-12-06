@@ -1,0 +1,12 @@
+
+
+#include <stdint.h>
+
+//AHBE2ENR 0x 4002 104c
+
+int main(void)
+{
+	uint32_t *pClkReg =(uint32_t*)0x4002104c;
+	*pClkReg |= (1<<1);
+	for(;;);
+}

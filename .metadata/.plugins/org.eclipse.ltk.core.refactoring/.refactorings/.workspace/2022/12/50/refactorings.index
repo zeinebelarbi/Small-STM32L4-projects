@@ -1,0 +1,6 @@
+1670143513673	Rename resource 'formation_gpio1'
+1670144240208	Delete resource 'uart/Core/Src/main.c'
+1670144284051	Delete resource 'uart/Core/Src/stm32l4xx_hal_msp.c'
+1670144291891	Delete resource 'uart/Core/Src/stm32l4xx_it.c'
+1670144304658	Delete resource 'uart/Core/Inc/stm32l4xx_it.h'
+1670144310505	Delete resource 'uart/Core/Inc/main.h'
